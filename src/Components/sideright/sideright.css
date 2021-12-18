@@ -1,0 +1,17 @@
+.right-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    color: var(--white);
+    height: 80px;
+}
+
+.post-container {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    place-items: start;
+    margin-left: 20px;
+}
+
+.post-container-title {
+    margin-bottom: 1px solid var(--gray1);
+}

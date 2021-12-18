@@ -1,0 +1,36 @@
+:root {
+  --blue10 : #edf5ff;
+  --blue50 : #4589ff;
+  --blue60 : #0f62fe;
+  --blue100: #001141;
+  --black60: #333333;
+  --black: black;
+  --blackHover: #212121;
+  --white: #ffffff;
+  --white0: white;
+  --whiteHover: #e8e8e8;
+  --green10 :#b6f6c8;
+  --green20 :#74e792;
+  --green50 :#208e3f;
+  --green90 :#033b11;
+  --green100:#0d300f;
+  --gray1 :#e0e0e0;
+  --gray2 :#8d8d8d;
+  --gray3 :#393939;
+}
+body {
+  background-color: white;
+  margin: 0;
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+/*   font-family: 
+    'Noto Sans',
+    'Noto Serif', 
+    serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+html{
+  font-size: 16px;
+}

@@ -1,0 +1,50 @@
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 5fr 8fr 1fr 1fr 1fr ;
+    height: 80px;
+    width: 100%;
+    background-color: var(--black);
+}
+.logo {
+    display: grid;
+    grid-column: 2;
+    grid-template-rows: 2;
+    place-items: center;
+    background-color: var(--black);
+    height: 80px;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+.logo a {
+    text-decoration: none;
+}
+.logo-title h2{
+    color: var(--white);
+    font-weight: 100;
+}
+.logo-subtitle{
+    margin-left: 10px;
+}
+.logo-subtitle h2{
+    color: var(--gray2);
+}
+.navbar-menu {
+    display: grid;
+    grid-column: 1;
+    place-items: center;
+}
+.navbar-menu img{
+    width: 40px;
+    height: 40px;
+}
+.navbar-ask {
+    display: grid;
+    grid-column: 6;
+    place-items: center;
+}
+.navbar-ask img{
+    width: 40px;
+    height: 40px;
+}

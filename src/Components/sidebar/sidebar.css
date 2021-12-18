@@ -1,0 +1,30 @@
+.categories {
+    position: fixed;
+    margin: 5rem 0 0 -1rem;
+    width: 20%;
+    height: 20rem;
+    padding: 0;
+}
+.categories ul{
+    padding: 0;
+    width: 100%;
+}
+.categories li{
+    list-style-type: none;
+    padding: .7rem;
+    margin-left: .5rem;
+    margin-right: 0;
+    text-align: right;
+}
+.categories li:hover{
+    background-color: #b9b7b77a;
+    border-radius: 5rem;
+    margin-left: 2rem;
+    text-align: center;
+	font-weight: 900;
+}
+.categories a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
