@@ -4,15 +4,16 @@ import './form.css';
 
 const Form = () => {
     return (
-        <div className='form'>
+        <div className='form-container'>
             <form method="GET">
                 <label>
-                    <div>
+                    <div className="form-inputs">
                         <input type="text" name="name" placeholder="User" /> 
                         <input type="text" name="src" placeholder="SRC" />
                         <input type="text" name="prog" placeholder="Program" /><br/>
                     </div>
-                    <div className="form_selectors">
+
+                    <div className="form-selectors">
                         <label>Sistem:</label>    
                         <select  name="sistem">
                             <option  value="none">-----</option>
@@ -32,14 +33,17 @@ const Form = () => {
                             <option value="aix">AIX</option>
                         </select><br/>
                     </div>
-                    <div>
+
+                    <div className="form-textarea">
                         <input type="text" name="title" placeholder="Title" />
                         <textarea id="message" type="text" rows="4" cols="50" placeholder="Your Description"></textarea>
                     </div>
-                    <div >
+
+                    <div className="form-buttons">
                         <input className="button" type="submit" value="Save" />
                         <input className="button"  type="submit" value="Return" />
                     </div>
+
                 </label>           
             </form>
         </div>

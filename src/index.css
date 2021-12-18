@@ -1,8 +1,8 @@
 :root {
-  --blue10 : #edf5ff;
-  --blue50 : #4589ff;
-  --blue60 : #0f62fe;
-  --blue100: #001141;
+  --blue1 : #edf5ff;
+  --blue2 : #4589ff;
+  --blue3 : #0f62fe;
+  --blue4: #001141;
   --black60: #333333;
   --black: black;
   --blackHover: #212121;
@@ -14,7 +14,7 @@
   --green50 :#208e3f;
   --green90 :#033b11;
   --green100:#0d300f;
-  --gray1 :#e0e0e0;
+  --gray1 :#f4f4f4;
   --gray2 :#8d8d8d;
   --gray3 :#393939;
 }

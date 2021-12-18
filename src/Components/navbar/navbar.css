@@ -4,6 +4,9 @@
     height: 80px;
     width: 100%;
     background-color: var(--black);
+    position: fixed;
+    top: 0;
+    border-bottom: 3px solid var(--gray2);
 }
 .logo {
     display: grid;
