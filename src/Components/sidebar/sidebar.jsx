@@ -6,17 +6,38 @@ import t3dev from "./t3dev.png"
 import Aportes from "../../pages/aporte";
 
 export const Sidebar = () => (
-        <div className="sidebar-container">
-            <div className="sidebar-container-main">
-                    <h2>Work in progress</h2>
-            </div>
-            <div className="sidebar-footer">
-                <div className="sidebar-footer-text">
-                    <p>Made by T3</p>
+        <div className="sidebar-container-main">
+            <div className="sidebar-container">
+                <div className="sidebar-container-item">
+                    <Link to="/eng-inst" className="link">
+                        <h3>Aportes de Ingenieria</h3>  
+                    </Link>    
                 </div>
-                <div className="sidebar-footer-img">
-                    <img src={t3dev} alt="t3dev"/>
+
+                <div className="sidebar-container-item">
+                    <Link to="/pcms" className="link">
+                        <h3>PCM'S</h3>  
+                    </Link>  
                 </div>
+
+                <div className="sidebar-container-item">
+                    <Link to="/work-arounds" className="link">
+                        <h3>Work Around</h3>  
+                    </Link>    
+                </div>
+
+                <div className="sidebar-container-item">
+                    <Link to="/golden" className="link">
+                        <h3>Inventario Golden</h3>  
+                    </Link>   
+                </div>
+
+                <div className="sidebar-container-item">
+                    <Link to="/manuals" className="link">
+                        <h3>Manuales</h3>  
+                    </Link>   
+                </div>
+
             </div>
         </div>
     

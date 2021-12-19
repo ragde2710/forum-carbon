@@ -1,22 +1,79 @@
 .form-container {
     display: grid;
-    grid-template-rows: 2fr 1fr 3fr 80px;
+    grid-template-rows: 150px auto auto;
+    height: 100%;
     width: 100%;
 }
 
-.form-inputs{
+.form-inputs {
     display: grid;
+    grid-row: 1;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 60%;
-    margin-left: 10%;
-    width: 80%;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    place-items: center;
 }
-.form-inputs input{
-    margin-top: 20px;
-    margin-left: 20px;
+.form-inputs input {
+    width: 250px;
+    height: 40px;
     border: none;
+    text-align: center;
     border-bottom: 1px solid var(--black);
 }
-.form-selectors {
-    grid-row: 2;
+.form-inputs .input-title input {
+    width: 300px;
+    margin-left: 8%;
 }
+.form-inputs select{
+    width: 250px;
+    height: 45px;
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid var(--black);
+    cursor: pointer;
+}
+.form-inputs .input-selector-system select {
+    margin-left: 15%;
+}
+
+.form-textarea {
+    display: grid;
+    grid-row: 2;
+    place-items: center;
+}
+.form-textarea .input-textarea textarea{
+    border: none;
+    border-bottom: 1px solid var(--black);
+    resize: none;
+}
+
+.form-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    grid-row: 3;    
+}
+.form-buttons input{
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+}
+.form-buttons .button-save {
+    background-color: var(--blue3);
+    color: var(--white);
+    border: none;
+}
+.form-buttons .button-save:hover{
+    background-color: var(--blue4);
+    cursor: pointer;
+}
+.form-buttons .button-return {
+    border: 1px solid var(--blue3); 
+    color: var(--blue3);
+    background-color: transparent;
+}
+.form-buttons .button-return:hover{
+    background-color: var(--blue3);
+    color: var(--white);
+    cursor: pointer;
+} 

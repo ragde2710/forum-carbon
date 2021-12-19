@@ -6,17 +6,29 @@ const Form = () => {
     return (
         <div className='form-container'>
             <form method="GET">
-                <label>
-                    <div className="form-inputs">
-                        <input type="text" name="name" placeholder="User" /> 
-                        <input type="text" name="src" placeholder="SRC" />
-                        <input type="text" name="prog" placeholder="Program" /><br/>
+            <label>
+
+                <div className="form-inputs">
+                    
+                    <div className="input-name">
+                        <input type="text" name="name" placeholder="User"/>
                     </div>
 
-                    <div className="form-selectors">
-                        <label>Sistem:</label>    
-                        <select  name="sistem">
-                            <option  value="none">-----</option>
+                    <div className="input-src">
+                        <input type="text" name="src" placeholder="SRC"/>
+                    </div>     
+
+                    <div className="input-program">
+                        <input type="text" name="prog" placeholder="Program"/>
+                    </div>    
+
+                    <div className="input-title">
+                        <input type="text" name="title" placeholder="Title" />
+                    </div>
+                    
+                    <div className="input-selector-system">
+                        <select  name="system">
+                            <option  value="none">System</option>
                             <option  value="mowgly">Mowgly</option>
                             <option value="zz">ZZ</option>
                             <option value="fleetwood">Fleetwood</option>
@@ -25,31 +37,33 @@ const Form = () => {
                             <option value="mihawk">mihawk</option>
                             <option value="solution">solution</option>
                         </select>
-                        <label>SO:</label>
-                        <select  name="so">
-                            <option value="none">-----</option>
+                    </div>
+
+                    <div className="input-selector-so">
+                        <select>
+                            <option value="none">SO</option>
                             <option value="linux">Linux</option>
                             <option value="ide">IDE</option>
                             <option value="aix">AIX</option>
-                        </select><br/>
+                        </select>
                     </div>
 
-                    <div className="form-textarea">
-                        <input type="text" name="title" placeholder="Title" />
-                        <textarea id="message" type="text" rows="4" cols="50" placeholder="Your Description"></textarea>
-                    </div>
+                </div>
 
-                    <div className="form-buttons">
-                        <input className="button" type="submit" value="Save" />
-                        <input className="button"  type="submit" value="Return" />
+                <div className="form-textarea">
+                    <div className="input-textarea">
+                            <textarea id="message" type="text" rows="10" cols="115" placeholder="Your Description"/>
                     </div>
-
-                </label>           
+                </div>
+  
+                <div className="form-buttons">
+                    <input className="button-save" type="submit" value="Save" />
+                    <input className="button-return"  type="submit" value="Return" />
+                </div>
+            </label>           
             </form>
         </div>
     );
 
-}
-
-            
+}            
 export default Form;

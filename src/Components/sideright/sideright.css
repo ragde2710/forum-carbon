@@ -34,6 +34,7 @@
 }
 .list-item:hover{
     background-color: var(--gray2);
+    cursor: pointer;
 }
 .list-item-title {
     height: 50px;

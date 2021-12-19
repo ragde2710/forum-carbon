@@ -1,0 +1,26 @@
+.sidebar-container-main{
+    display: grid;
+    grid-template-rows: 5fr 2f;
+}
+
+.sidebar-container {
+    display: grid;
+    grid-template-rows: repeat(5, 60px);
+    grid-row: 1;
+}
+.sidebar-container-item {
+    border-bottom: 0.5px solid var(--gray2);
+    background-color: var(--white); 
+}
+.sidebar-container-item:hover{
+    background-color: var(--gray2);
+    cursor: pointer;
+}
+.sidebar-container-item h3 {
+    font-weight: 200;
+    font-size: 16px;
+    color: var(--black);
+}
+.sidebar-container-item .link {
+    text-decoration: none;
+}
